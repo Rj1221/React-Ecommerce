@@ -8,7 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const user = { _id: "121", name: "Raj", email: "", role: "admin" };
+const user = { _id: "", name: "", email: "", role: "" };
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
   const logoutHandler = () => {
@@ -50,7 +50,7 @@ const Header = () => {
           </>
         ) : (
           <Link to="/login">
-            Login <FaSignInAlt />
+            <FaSignInAlt />
           </Link>
         )}
 
