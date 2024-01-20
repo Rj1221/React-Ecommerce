@@ -18,13 +18,13 @@ const Header = () => {
     <>
       <nav className="header">
         <Link to="/" onClick={() => setOpen(false)}>
-          Home
+          HOME
         </Link>
         <Link to="/search" onClick={() => setOpen(false)}>
-          Search <FaSearch />
+          <FaSearch />
         </Link>
         <Link to="/cart" onClick={() => setOpen(false)}>
-          Cart <FaShoppingBag />
+          <FaShoppingBag />
         </Link>
         {/* If user is logged in */}
         {user?._id ? (
