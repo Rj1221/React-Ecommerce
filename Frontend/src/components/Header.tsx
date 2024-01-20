@@ -8,7 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const user = { _id: "", name: "", email: "", role: "" };
+const user = { _id: "123", name: "Raj", email: "", role: "admin" };
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false);
   const logoutHandler = () => {
