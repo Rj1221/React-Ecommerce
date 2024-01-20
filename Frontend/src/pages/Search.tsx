@@ -6,6 +6,7 @@ const Search = () => {
   const [maxPrice, setMaxPrice] = useState<number>(10000);
   const [category, setCategory] = useState<string>("");
   const [page, setPage] = useState<number>(1);
+
   const addToCartHandler = () => {};
   return (
     <>
@@ -31,7 +32,7 @@ const Search = () => {
               type="range"
               min={100}
               max={100000}
-              value={maxPrice}
+              value={parseInt(maxPrice.toString())}
               onChange={(e) => setMaxPrice(Number(e.target.value))}
             />
           </div>
@@ -70,6 +71,7 @@ const Search = () => {
               stock={10}
               handler={addToCartHandler}
             />
+            {/* Add more ProductCard components as needed */}
           </div>
           <article>
             <button
