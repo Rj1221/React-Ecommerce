@@ -34,6 +34,7 @@ export default {
 ```bash
 npm i react-hot-toast react-icons sass firebase react-router-dom react-table
 npm i --save-dev @types/react-table
+npm i --save chart.js react-chartjs-2
 ```
 
 ## Backend Packages
