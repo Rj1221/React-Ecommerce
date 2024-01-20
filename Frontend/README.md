@@ -35,6 +35,8 @@ export default {
 npm i react-hot-toast react-icons sass firebase react-router-dom react-table
 npm i --save-dev @types/react-table
 npm i --save chart.js react-chartjs-2
+npm i react-select-country-list
+npm i --save-dev @types/react-select-country-list
 ```
 
 ## Backend Packages
