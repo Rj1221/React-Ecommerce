@@ -8,6 +8,14 @@ export const register = async (
 ) => {
   try {
     const { name, email, photo, gender, dob, _id } = req.body;
+
+    const userExists = await User.exists({ email });
+    if (userExists) {
+      return res.status(400).json({
+        success: false,
+        message: "User already exists",
+      });
+    }
     const user = await User.create({
       name,
       email,
