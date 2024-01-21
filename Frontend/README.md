@@ -47,4 +47,6 @@ tsc --init
 npm i express dotenv cors path mongoose
 npm i --save-dev @types/express @types/node typescript
 tsc # Use this command to compile the typescript files
+npm i validator
+npm i --save-dev @types/validator
 ```
