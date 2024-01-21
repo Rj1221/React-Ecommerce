@@ -42,6 +42,9 @@ npm i --save-dev @types/react-select-country-list
 ## Backend Packages
 
 ```bash
-npm i express cors mongoose dotenv
-npm i --save-dev @types/express @types/cors @types/mongoose @types/dotenv
+npm i -g typescript
+tsc --init
+npm i express dotenv cors path mongoose
+npm i --save-dev @types/express @types/node typescript
+tsc # Use this command to compile the typescript files
 ```
